@@ -4,6 +4,7 @@
 
 
 #Dependencies installed and ready
+import os
 from bs4 import BeautifulSoup
 import mechanize
 
@@ -15,4 +16,4 @@ def fetchHTML(url):
 	html = br.open(url)
 	return html.read()
 
-
+#Use os.system("...") ti run a command line argument
