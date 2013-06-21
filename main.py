@@ -13,6 +13,6 @@ url = "http://www.nytimes.com/"
 def fetchHTML(url):
 	br = mechanize.Browser()
 	html = br.open(url)
-	print html.read()
+	return html.read()
 
 
